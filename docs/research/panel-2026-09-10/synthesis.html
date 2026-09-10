@@ -1,0 +1,387 @@
+<title>With Love by Iris Business Plan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,600;9..144,700,100&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+:root{
+  --ground:#F7F3EC;
+  --paper:#FDFBF7;
+  --ink:#3B322B;
+  --ink-2:#6A5D52;
+  --rule:#DCD2C3;
+  --sage:#6F8A6C;
+  --sage-soft:#E4EBE1;
+  --honey:#C9942E;
+  --honey-soft:#F6E9CF;
+  --kraft:#B9976B;
+  --verdict-bg:#FBF3E3;
+  --disagree:#A6543A;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#1E1A16;--paper:#26211C;--ink:#EDE5D8;--ink-2:#B5A896;--rule:#3E362E;
+    --sage:#8FA98B;--sage-soft:#2C3529;--honey:#D9A64A;--honey-soft:#3A2F1C;--kraft:#C5A57A;--verdict-bg:#2F2818;--disagree:#D08065;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#1E1A16;--paper:#26211C;--ink:#EDE5D8;--ink-2:#B5A896;--rule:#3E362E;
+  --sage:#8FA98B;--sage-soft:#2C3529;--honey:#D9A64A;--honey-soft:#3A2F1C;--kraft:#C5A57A;--verdict-bg:#2F2818;--disagree:#D08065;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:"Nunito Sans",system-ui,-apple-system,Segoe UI,sans-serif;font-size:16px;line-height:1.55;padding-inline:16px;padding-block:0 64px}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;font-variation-settings:"SOFT" 100;text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,5vw,3rem);font-weight:600;line-height:1.1}
+h2{font-size:1.6rem;font-weight:600;margin-bottom:.5rem}
+h3{font-size:1.15rem;font-weight:600;margin-top:1.25rem;margin-bottom:.25rem}
+p{margin:.5rem 0;max-width:68ch}
+ul,ol{margin:.4rem 0 .6rem;padding-left:1.25rem;max-width:68ch}
+li{margin:.25rem 0}
+a{color:var(--sage)}
+.wrap{max-width:1080px;margin:0 auto}
+header{padding-block:48px 28px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);font-weight:700}
+.lede{font-size:1.15rem;color:var(--ink-2);max-width:60ch;margin-top:.75rem}
+.panel{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.who{font-size:.8rem;padding:4px 10px;border:1px solid var(--rule);border-radius:999px;background:var(--paper);color:var(--ink-2)}
+.layout{display:grid;grid-template-columns:200px 1fr;gap:40px;margin-top:32px}
+nav.toc{position:sticky;top:24px;align-self:start;font-size:.9rem}
+nav.toc a{display:block;color:var(--ink-2);text-decoration:none;padding:4px 0;border-left:2px solid transparent;padding-left:10px}
+nav.toc a:hover,nav.toc a:focus{color:var(--ink);border-left-color:var(--sage)}
+section{padding-block:28px;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:0}
+.verdict{background:var(--verdict-bg);border-left:4px solid var(--honey);padding:14px 18px;margin-top:18px;max-width:72ch}
+.verdict .eyebrow{color:var(--honey)}
+.verdict p{margin:.35rem 0 0}
+.split{color:var(--disagree);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
+.tbl{overflow-x:auto;margin:.75rem 0}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+td.num,th.num{text-align:right}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:12px}
+.tile{background:var(--paper);border:1px solid var(--rule);padding:14px 16px}
+.tile h3{margin-top:0}
+.tile ul{margin-bottom:0}
+.tag{display:inline-block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--sage);font-weight:700;margin-bottom:4px}
+.tree{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85rem;background:var(--paper);border:1px solid var(--rule);padding:12px 16px;white-space:pre;overflow-x:auto;max-width:100%}
+.phase{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--rule)}
+.phase:last-child{border-bottom:1px solid var(--rule)}
+.phase .d{font-family:Fraunces,serif;font-size:1.05rem;color:var(--honey);font-weight:600}
+.phase ul{margin:0}
+.do,.dont{padding-left:1.1rem}
+.small{font-size:.85rem;color:var(--ink-2)}
+@media (max-width:760px){.layout{grid-template-columns:1fr;gap:16px}nav.toc{position:static;display:flex;flex-wrap:wrap;gap:4px 14px}nav.toc a{border-left:0;padding-left:0}.phase{grid-template-columns:1fr;gap:4px}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+html{scroll-behavior:smooth}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Panel synthesis, September 10, 2026</div>
+  <h1>With Love by Iris</h1>
+  <p class="lede">A business model and storefront plan for a solo maker in Bethel, Ohio, from six specialists who work with people like her. Written for Justin, who builds the site, and for Iris, who runs the business.</p>
+  <div class="panel">
+    <span class="who">Bath &amp; body maker, fair to DTC</span>
+    <span class="who">SW Ohio booth veteran</span>
+    <span class="who">Etsy strategist</span>
+    <span class="who">DTC UX &amp; conversion</span>
+    <span class="who">Small-biz finance coach</span>
+    <span class="who">Faith &amp; community marketer</span>
+  </div>
+</header>
+
+<div class="layout">
+<nav class="toc" aria-label="Sections">
+  <a href="#model">The model</a>
+  <a href="#line">Product line</a>
+  <a href="#money">Unit economics</a>
+  <a href="#legal">Legal first</a>
+  <a href="#channels">Channels &amp; Etsy</a>
+  <a href="#site">Site &amp; user flows</a>
+  <a href="#retain">Retention</a>
+  <a href="#market">Marketing</a>
+  <a href="#plan">90-day plan</a>
+  <a href="#splits">Where the panel split</a>
+</nav>
+
+<main>
+
+<section id="model">
+  <h2>The model in one paragraph</h2>
+  <p>Iris sells comfort to one buyer: a woman aged 45 to 70 in Clermont County and her circle, who buys for family and church friends. Three lines serve that buyer. <strong>Wholesome Living</strong> bath and body brings her back every six weeks. <strong>Scripture beeswax candles</strong> bring in new people as gifts. <strong>Memory bears</strong> are the flagship: high price, no competition at the bazaar, referred by funeral homes and hospices, found on Etsy and Google by people in grief. Craft fairs and Facebook find customers; the website keeps them. Etsy is a five-listing billboard for the bears and quilts, never a store.</p>
+  <p>Positioning line from the marketing panelist: <em>"Handmade in Bethel, Ohio, with scripture and love: comfort for your body, your home, and your memories."</em></p>
+  <div class="verdict">
+    <div class="eyebrow">Name</div>
+    <p><strong>With Love by Iris</strong> is the house brand and site. <strong>Wholesome Living</strong> stays as the bath and body line name, so nothing printed is wasted. "Wholesome Living" cannot carry a grief keepsake; "With Love by Iris" fits a bear tag, a candle lid, and a shampoo wrap. Keep the "ir!s" stylization on labels; use plain "Iris" in URLs, email, and the Facebook page name so people can search it.</p>
+  </div>
+</section>
+
+<section id="line">
+  <h2>Product line: cut it, then price it</h2>
+  <p>Every panelist who touched the catalog said the same thing: ten shampoo scents plus three face products plus a postal bear is a hobby catalog. Each SKU costs a label, a photo, a supply order, and a row in her head.</p>
+  <div class="grid2">
+    <div class="tile"><span class="tag">Lead with</span><h3>Core, on the site day one</h3><ul>
+      <li>Shampoo bars, <strong>five or six scents</strong>. Maker says five (Lavender Fields, Orange Cream, Vanilla Bean, Honeysuckle Dew, one woodsy bar merging Cedarwood and Sandalwood). Marketer says six. Let her fair sales pick, but hold the count.</li>
+      <li>Men's Face &amp; Beard Balm, both verses.</li>
+      <li>Beeswax scripture candles, sold single and as a set of three.</li>
+    </ul></div>
+    <div class="tile"><span class="tag">Keep as add-ons</span><h3>Small, cart fillers</h3><ul>
+      <li>Peppermint Smack lip gloss ($6, 3 for $15).</li>
+      <li>Paw-Fection, online only as a two-pack or add-on. Single tubes at the booth and the vet.</li>
+    </ul></div>
+    <div class="tile"><span class="tag">Inquiry only</span><h3>Custom sewing, never add-to-cart</h3><ul>
+      <li>Memory bears: $135 for 16 inch, $165 with photo patch, $40 per extra bear from the same clothes. 50% deposit.</li>
+      <li>Baby quilts with birth details, $250 and up, deposit first.</li>
+    </ul></div>
+    <div class="tile"><span class="tag">Park for launch</span><h3>Revisit after 90 days</h3><ul>
+      <li>Clay mask and facial scrub (nobody buys skincare from a tent; fold into one "Botanical Face Set" later if online demand shows).</li>
+      <li>Muscle balm. "Cooling Mint Muscle Balm" is a legal name; park it only until the back label is fixed, and never write "relieves" or "soothes."</li>
+      <li>Postal bear and other character bears: Facebook Marketplace with pickup, not the site.</li>
+      <li>Rotating "this season" scent slot for the parked flavors. Rose of Sharon takes the first slot; it is the one scent with a verse behind it (Song of Solomon 2:1).</li>
+    </ul></div>
+  </div>
+  <div class="verdict">
+    <div class="eyebrow">Pricing rule</div>
+    <p>Retail at 4x materials, wholesale at 2x. If 4x feels high, the materials cost is wrong or the product is. Bars $12 (3 for $32), balm $18, candle $22 to $24, paw balm $10 at the booth. She is not taking a loss on the paw balm at $10 in person; she only loses when she subsidizes a mailer for one tube.</p>
+    <p><strong>The vet:</strong> the panel split between consignment and wholesale. Call: consignment first (the vet pays nothing up front, she keeps 60 to 70% of $10, restocks monthly). Once it sells through twice, switch to wholesale at $6 with a 6-unit minimum so she is paid on delivery. Same template for groomers, the feed store, and boutiques.</p>
+  </div>
+</section>
+
+<section id="money">
+  <h2>Unit economics and a conservative year</h2>
+  <p>Finance panelist's numbers. Labor at $20 an hour, card fee 2.9% plus 30 cents, shipping subsidy is what she eats on a flat $6 label. COGS estimated from her posted ingredient lists.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Product</th><th class="num">Price</th><th class="num">COGS</th><th class="num">Labor</th><th class="num">Pack</th><th class="num">Card</th><th class="num">Ship sub.</th><th class="num">Net</th><th class="num">Margin</th></tr></thead>
+    <tbody>
+      <tr><td>Shampoo bar</td><td class="num">$12.00</td><td class="num">$2.25</td><td class="num">$1.50</td><td class="num">$0.60</td><td class="num">$0.65</td><td class="num">$1.50</td><td class="num">$5.50</td><td class="num">46%</td></tr>
+      <tr><td>Beeswax candle</td><td class="num">$22.00</td><td class="num">$7.50</td><td class="num">$2.00</td><td class="num">$1.20</td><td class="num">$0.94</td><td class="num">$2.50</td><td class="num">$7.86</td><td class="num">36%</td></tr>
+      <tr><td>Paw-Fection (online, single tube)</td><td class="num">$10.00</td><td class="num">$2.10</td><td class="num">$1.35</td><td class="num">$0.85</td><td class="num">$0.59</td><td class="num">$2.00</td><td class="num">$3.11</td><td class="num">31%</td></tr>
+      <tr><td>Paw-Fection (booth)</td><td class="num">$10.00</td><td class="num">$2.10</td><td class="num">$1.35</td><td class="num">$0.85</td><td class="num">$0.41</td><td class="num">$0.00</td><td class="num">$5.29</td><td class="num">53%</td></tr>
+      <tr><td>Memory bear (midpoint of $135 / $165)</td><td class="num">$150.00</td><td class="num">$12.00</td><td class="num">$80.00</td><td class="num">$4.00</td><td class="num">$4.65</td><td class="num">$0.00</td><td class="num">$49.35</td><td class="num">33%</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">The bear row already pays her $80 for four hours before the $49 net. Every other row pays her only the labor column. That is why the bear is the flagship.</p>
+  <h3>Twelve months, conservative</h3>
+  <p>Assumes 21 fairs at $350 average booth revenue, online orders growing from 6 to 20 a month at a $38 average order, and 6 memory bears.</p>
+  <div class="tbl"><table>
+    <tbody>
+      <tr><td>Fair revenue</td><td class="num">$7,350</td></tr>
+      <tr><td>Online revenue</td><td class="num">$5,776</td></tr>
+      <tr><td>Memory bears</td><td class="num">$900</td></tr>
+      <tr><th>Total revenue</th><th class="num">$14,026</th></tr>
+      <tr><td>Materials and packaging (about 28%)</td><td class="num">($3,930)</td></tr>
+      <tr><td>Card fees, shipping subsidy, booth fees</td><td class="num">($1,975)</td></tr>
+      <tr><td>Insurance, licenses, LLC, hosting, tools</td><td class="num">($1,050)</td></tr>
+      <tr><th>Left for Iris before paying herself</th><th class="num">$7,070</th></tr>
+    </tbody>
+  </table></div>
+  <div class="verdict">
+    <div class="eyebrow">Read it honestly</div>
+    <p>If she counts only the 480 hours the sales themselves take, that is $14.70 an hour. If she works the full 25-hour week the finance panelist budgets (about 1,300 hours), it is $5.44 an hour, and paying herself $20 an hour would show a $2,500 loss. Year one is a paid hobby that covers its costs. Year two, at 30 online orders a month and 12 bears, clears $20 an hour plus profit. That is a normal solo-maker curve, and it beats the same year on Etsy by roughly $1,500 in fees. The lever that moves the number is bears, not more scents.</p>
+  </div>
+  <h3>Stock, cash, and the making week</h3>
+  <ul>
+    <li><strong>One product family per making day, one making day a week.</strong> Batch 24 to 48 bars, 12 to 24 balms, 12 candles. Hold 4 to 6 weeks of stock per item; remake at 25% remaining, and set the site's low-stock alert to match.</li>
+    <li><strong>Launch stock:</strong> about 60 bars, 24 candles, 20 paw balms, 10 of each balm. More than that is cash on a shelf.</li>
+    <li><strong>Lot codes:</strong> date plus a product letter on every batch, logged in a notebook. This is her MoCRA record and her recall plan.</li>
+    <li><strong>Cash rule:</strong> keep one month of costs, about $600, in the business account. Never spend fair cash before it is deposited and logged on Friday.</li>
+    <li><strong>Weekly hours, 25:</strong> production 10, fairs 4 on average, packing 3 (Monday and Thursday only), content 3 (one photo session, one long post), admin 1 (Friday).</li>
+  </ul>
+  <h3>Three sticky-note metrics</h3>
+  <ol>
+    <li><strong>Revenue per fair hour</strong>, including drive and setup. Under $30 an hour, drop that fair.</li>
+    <li><strong>Online orders this month vs last.</strong> If it is not rising, the content plan is failing, not the site.</li>
+    <li><strong>Cash in the business account on Friday.</strong> Two drops in a row, stop buying supplies.</li>
+  </ol>
+</section>
+
+<section id="legal">
+  <h2>Legal and labels, before the first shipped order</h2>
+  <p>About $650 to $750 for year one. One good fair.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Order</th><th>Item</th><th class="num">Cost</th><th>Why now</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Product liability insurance (HSCG member policy or ACT Pro)</td><td class="num">$400 to $515/yr</td><td>Leave-on skin products and a pet product are the exposure. Fairs and the vet will ask for the certificate.</td></tr>
+      <tr><td>2</td><td>Ohio vendor's license (county) plus transient vendor's license (state)</td><td class="num">$50 + $50</td><td>Required to sell taxable goods from home and at fairs outside Clermont.</td></tr>
+      <tr><td>3</td><td>EIN and a separate business checking account</td><td class="num">$0</td><td>Every Stripe payout, fair deposit, and supply order through one account. Makes tax time a two-hour job.</td></tr>
+      <tr><td>4</td><td>Ohio LLC (Form 610, no annual report)</td><td class="num">$99</td><td>Once revenue is real, about $500 a month. Insurance protects her first; the LLC protects the house.</td></tr>
+      <tr><td>5</td><td>Sales tax: one Ohio rate, origin-based</td><td class="num">$0</td><td>Charge the Bethel / Clermont County rate on every Ohio order, shipped or picked up. Verify the rate on Ohio's The Finder. Ask for semiannual filing. No out-of-state tax at her size.</td></tr>
+      <tr><td>6</td><td>Stripe under the EIN, wallets on</td><td class="num">2.9% + 30¢</td><td>Square at the booth is fine. Two processors, one bank account.</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Labels she must fix</h3>
+  <ul>
+    <li><strong>Every cosmetic</strong> (bars, balms, gloss, mask, scrub): identity statement ("Shampoo Bar"), net weight in oz and grams on the front, full INCI ingredient list in descending order (she needs the base supplier's INCI list, "shampoo base" does not count), business name and address, and a phone or email for adverse-event reports. The round watercolor wrap will not hold all of it; add a small back label or hang tag.</li>
+    <li><strong>MoCRA:</strong> under $1M in sales she is exempt from FDA registration, listing, and GMP. She still keeps a batch log with lot codes and must report a serious adverse event within 15 business days.</li>
+    <li><strong>Claims:</strong> "cooling mint muscle balm" is fine, "relieves sore muscles" is a drug claim. Mask cannot "detox." Gloss cannot "heal." Paw balm ceiling is "moisturizes, lick-safe ingredients"; "heals cracked pads" is a veterinary drug claim. Beef tallow goes rancid, so date the tubes.</li>
+    <li><strong>Candles:</strong> ASTM F2058 caution text on the tin bottom (burn within sight, keep away from things that catch fire, keep away from children and pets, trim wick to 1/4 inch, 3 to 4 hour max burn).</li>
+  </ul>
+</section>
+
+<section id="channels">
+  <h2>Channels, and the honest answer on Etsy</h2>
+  <p>Justin's instinct was half right. Etsy is cutthroat for what he assumed she would list: bars, balms, gloss, paw balm. Single-bar orders net about $6 after Etsy's 12% and USPS. It is not cutthroat for bereavement sewing, where buyers search by need, price-insensitive, and Etsy's 2025 to 2026 handmade crackdown is pruning template-cut competitors, not a seamstress working from the customer's own clothes.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Channel</th><th>Role</th><th>What goes there</th></tr></thead>
+    <tbody>
+      <tr><td>withlovebyiris.com</td><td>Home. All fulfillment, all reorders.</td><td>Everything</td></tr>
+      <tr><td>Craft fairs and church bazaars, within 40 minutes of Bethel</td><td>Acquisition. 10 to 12 a year, $800 to $1,200 in fees.</td><td>Under $25, sniffable, giftable: bars, paw balm, gloss, candles, small gift bags</td></tr>
+      <tr><td>Facebook page plus personal profile</td><td>Primary content channel. Her long posts already work.</td><td>Process posts, product posts, bear reveals, verse of the week</td></tr>
+      <tr><td>Etsy, hard cap of 5 listings, Offsite Ads off</td><td>Billboard for grief and gift searches. Every box carries a card to the site.</td><td>Memory bear (2 tiers), baby quilt, candle set of 3, Strong &amp; Steadfast as a Christian gift</td></tr>
+      <tr><td>Nextdoor and Facebook Marketplace (free)</td><td>Local pickup products, no shipping math</td><td>Character bears, ready quilts, paw balm</td></tr>
+      <tr><td>Consignment: the vet, one Milford or Batavia boutique, a church gift shop</td><td>Wholesale template. 60/40 in her favor, 90 days, monthly settlement.</td><td>Paw balm, candles, balms. Not bears.</td></tr>
+      <tr><td>Funeral homes, hospice social workers, her church, estate sale companies</td><td>Referral partners for bears. No fee, just a card in the arrangement room.</td><td>Memory bears</td></tr>
+      <tr><td>Findlay Market, Hamilton County Fair, Faire wholesale, Instagram, TikTok, paid ads</td><td>Skip in year one</td><td></td></tr>
+    </tbody>
+  </table></div>
+  <h3>Etsy rules that matter</h3>
+  <p>Etsy prohibits steering buyers off-platform in listings, messages, or the shop announcement. The About page "around the web" links are allowed. Inside the box is hers: a kraft thank-you card with the site, the Facebook page, a 10% code for the next order, and a photo of the whole line, since the bear buyer never saw the candles. Etsy also collects and remits Ohio sales tax on those orders for her.</p>
+</section>
+
+<section id="site">
+  <h2>The site: architecture and the five flows to build first</h2>
+  <p>Assume a phone screen for everything. Small beauty stores convert around 1.2 to 1.9% on mobile with 65 to 75% of traffic there; Apple Pay and Google Pay are the single biggest lift. The UX panelist collapsed the proposed seven-category tree, which mixed audience, type, and craft, into four.</p>
+  <div class="tree">Shop
+  Bath &amp; Body        (the Wholesome Living line: bars, balms, gloss, later mask/scrub)
+    For Him          (a landing page and tag, not a category)
+  Candles &amp; Prayer   (scripture beeswax candles, devotional intent)
+  Custom Sewing      (memory bears, quilts; inquiry-driven)
+  Gifts              (scent sampler, gift sets, paw balm two-pack)
+Our Story
+Find Me At          (upcoming fairs, booth number, pickup window)</div>
+  <p>Mobile nav: logo, Shop, Our Story, cart. Nothing else.</p>
+
+  <h3>Homepage above the fold, for the person who scanned the booth QR</h3>
+  <ul>
+    <li>One workbench photo of Iris with product. Not a grid.</li>
+    <li>Headline in her voice: "Small batch, made in Bethel, Ohio."</li>
+    <li>One button: Shop Shampoo Bars.</li>
+    <li>A strip: "Free pickup in Bethel. Flat $6 shipping. Free over $45."</li>
+    <li>Below the fold: Scent Sampler, a scripture candle, a memory bear teaser with one story.</li>
+  </ul>
+
+  <h3>Product pages</h3>
+  <ul>
+    <li><strong>Shampoo bar:</strong> one product, scents as variants under one "Scent" option. Gallery (bar, wrapped bar, lather on a hand), scent pills with a one-line note each ("Orange Cream: warm citrus, like a creamsicle"), Add to cart plus a "Try 3 scents" link, then accordions: how to use, full ingredients, "lasts about 60 to 80 washes," ships within 3 business days. No scent quiz; good notes do 80% of the job with zero build.</li>
+    <li><strong>Scripture candle:</strong> the verse is the variant. Lid photographed large. Burn time, "100% beeswax, no fragrance, no soot," one paragraph in her words about praying while it burns. Cross-sell the matching men's balm; the verse pairings already exist on her labels.</li>
+    <li><strong>Memory bear:</strong> three finished bears with their stories (with permission), a plain price table, lead time ("4 to 6 weeks after your clothing arrives, longer in November and December"), what happens to leftover fabric (returned, or a $35 keepsake pillow), and a "Start a bear" button to an inquiry form. Never a Buy button.</li>
+  </ul>
+
+  <h3>Checkout, two steps</h3>
+  <ul>
+    <li>Guest by default. "Save your details for reorders" is a post-payment checkbox.</li>
+    <li>Two shipping methods: "Local pickup in Bethel (free)" swaps the address form for a phone field and shows pickup instructions; "USPS flat rate $6."</li>
+    <li>Stripe Payment Element with wallets, wallet button above the card form. Tax line visible. Promo field collapsed, one tap. One notes field: "Gift message or anything I should know."</li>
+  </ul>
+
+  <div class="verdict">
+    <div class="eyebrow">When an order comes in, for Iris</div>
+    <p>Your phone and Justin's get a text and an email. You do not have to do anything that day. Pack on Monday and Thursday. Print the label on Pirate Ship (free, cheaper USPS rates), tape it to a padded mailer (buy 50 at a time, about 50 cents each), and schedule a free USPS carrier pickup from the porch on the Pirate Ship screen. No trip to the post office. Pickup orders: the site texts the customer your porch window; you set it once. The site promises "ships within 3 business days," which Monday and Thursday packing always meets.</p>
+    <p><strong>Summer:</strong> balms and lip gloss soften above 85°F in a mailbox. June through August, ship them in a padded mailer with a "may soften in heat, cool before opening" card, or steer locals to pickup. Candles and bars do not care.</p>
+    <p><strong>Photos:</strong> Justin shoots the whole batch once, on the same board, in the same afternoon light, with a phone. One session per product family. Iris shoots the workbench and process shots for Facebook; those do not need to be pretty.</p>
+    <p><strong>Justin's time:</strong> the five build steps are roughly 40 to 60 hours before launch, then an hour or two a week for a month. Saturday fixes go through a text; nothing on the site needs same-day attention except a payment failure, which Stripe emails him.</p>
+  </div>
+
+  <div class="verdict">
+    <div class="eyebrow">Build order for Justin</div>
+    <p><strong>1.</strong> Shampoo bar product page with scent variants, cart, guest checkout with pickup and flat rate, Stripe wallets on.<br><strong>2.</strong> A /booth route that auto-applies a 72-hour BOOTH10 promo, so every fair order is attributed.<br><strong>3.</strong> Transactional emails in her voice, plus the day-14 review ask and day-55 reorder reminder.<br><strong>4.</strong> Memory bear inquiry form that emails Iris, then a Medusa draft order for the 50% deposit and a second for the balance after the approval photo.<br><strong>5.</strong> Sampler and gift-set bundles as inventory kits so component stock decrements.<br>Two more from the booth panelist: <strong>pre-orders for pickup at the next fair</strong> (zero shipping, guaranteed sale) and a <strong>one-screen stock-adjust admin view</strong> she can use from the truck at end of day.</p>
+  </div>
+  <p><strong>Skip in v1:</strong> required accounts, scent quiz, subscriptions, points, wishlist, chat, blog. Revisit subscriptions only if reorder-link clicks exceed 20% of reminder sends.</p>
+</section>
+
+<section id="retain">
+  <h2>Retention: the bars are the business</h2>
+  <p>A shampoo bar lasts 4 to 6 weeks. Beard balm 6 to 8. Beauty repeat-purchase rates run 25 to 40%, with half of second orders inside 30 days. Candles and bears bring new people; bars keep them.</p>
+  <ul>
+    <li><strong>Three plain-text emails in her voice:</strong> confirmation; shipped or ready-for-pickup with the how-to-use card; day 14 "How's the lather?" asking for a review that renders on the product page, no third-party widget.</li>
+    <li><strong>Reorder reminder</strong> at day 55 for a single bar, day 100 for a sampler, one-tap link prefilled with the last scent.</li>
+    <li><strong>Bundles:</strong> Scent Sampler (3 half bars, choose scents), Gift Set (bar plus candle in the honeycomb bag), Men's Set (balm plus candle).</li>
+    <li><strong>Free shipping at $45.</strong> Pushes the two-bar order to three bars and a gloss, and covers the label.</li>
+    <li><strong>One loyalty mechanic she can honor:</strong> "Bring a friend." Friend gets 10% off; referrer gets a handwritten note and a free lip gloss in the next order.</li>
+    <li><strong>Reorder card in every bag</strong> at the booth, business-card size, kraft, label art on the front, QR on the back.</li>
+  </ul>
+</section>
+
+<section id="market">
+  <h2>Marketing she can sustain</h2>
+  <div class="grid2">
+    <div class="tile"><span class="tag">Facebook, four posts a week</span><h3>All from the workbench phone</h3><ul>
+      <li>Monday: long process post. This is the one that converts; keep writing them.</li>
+      <li>Wednesday: one product, one price, one link.</li>
+      <li>Friday: customer photo or bear reveal, with permission.</li>
+      <li>Sunday: verse of the week tied to a candle or balm. Most shared post type in this audience.</li>
+      <li>Share every page post from her personal profile. Go live from the workbench once a month, unedited.</li>
+      <li>Connect the catalog to Facebook Shop through Commerce Manager so products tag in posts and check out on the site.</li>
+    </ul></div>
+    <div class="tile"><span class="tag">Email, MailerLite free tier</span><h3>250 subscribers, 2,500 sends a month</h3><ul>
+      <li>Welcome sequence: (1) who Iris is, a verse, a 10% first-order code; (2) day 3, one memory bear story; (3) day 7, the scent guide.</li>
+      <li>Then at most two campaigns a month: one product or seasonal, one story.</li>
+      <li>Capture at checkout, at the booth (name plus phone or email only, one field too many halves the list), and a footer form.</li>
+      <li>Booth follow-up within 24 hours: booth photo, link, code. After 48 hours she is forgotten.</li>
+      <li>Short SMS for locals ("New Key Lime Pie bars, pickup Saturday in Bethel") converts better than a newsletter with this crowd.</li>
+    </ul></div>
+    <div class="tile"><span class="tag">Local, offline</span><h3>Her influencers are pastors' wives and funeral directors</h3><ul>
+      <li>Church bulletin ads in Bethel, Amelia, Batavia: $25 to $50 each, worth more than any online ad.</li>
+      <li>Community Facebook groups, once a week, as a neighbor.</li>
+      <li>Funeral homes (E.C. Nurre, Tufts Schildmeyer), Hospice of Cincinnati chaplains and social workers, her own congregation's bereavement ministry. Leave a framed card and 20 brochures. Offer the director a bear for their own family.</li>
+      <li>The vet, groomers, the Bethel feed store for Paw-Fection.</li>
+    </ul></div>
+    <div class="tile"><span class="tag">Fairs to target</span><h3>Within 40 minutes of Bethel</h3><ul>
+      <li>Bulldog Arts and Crafts Festival, Batavia, Oct 24. Apply now.</li>
+      <li>Milford Pottery Holiday Show, Nov 28 to 29.</li>
+      <li>Church bazaars Oct through early Dec, $20 to $50 tables. Nobody else there does faith-forward bath goods.</li>
+      <li>Weekly farmers markets (Milford, Anderson, Batavia) for Saturday regulars.</li>
+      <li>Rule: if a fair does not clear 5x its fee in sales plus signups, drop it.</li>
+    </ul></div>
+  </div>
+  <p><strong>Do not:</strong> buy ads before 20 organic site orders exist; open TikTok or chase influencers; widen the bath and body line; hand-write shipping labels (Pirate Ship is free with commercial USPS rates). Reply to comments, since that is her voice and her buyers, but in one sitting a day, not all day.</p>
+</section>
+
+<section id="plan">
+  <h2>Ninety days</h2>
+  <div class="phase"><div class="d">Days 1 to 30</div><ul>
+    <li>Insurance, vendor's licenses, EIN, business checking. Labels corrected and reprinted with back labels.</li>
+    <li>Site live with 5 or 6 bar scents, both balms, candles, the memory bear page and inquiry form, pickup and flat rate, Stripe wallets, /booth promo route.</li>
+    <li>MailerLite welcome sequence built. Facebook page renamed to With Love by Iris, shop connected.</li>
+    <li>Ten memory bear brochures and 200 reorder cards printed.</li>
+  </ul></div>
+  <div class="phase"><div class="d">Days 31 to 60</div><ul>
+    <li>Visit three funeral homes, one hospice, and her own church with the brochure.</li>
+    <li>Bulldog Fest booth with QR, signup clipboard, and a candle drawing. Follow-up email within 24 hours.</li>
+    <li>Four Facebook posts a week. First two email campaigns.</li>
+    <li>Five Etsy listings go up, Offsite Ads off, card in every box.</li>
+    <li><strong>October 1:</strong> announce the holiday memory bear window with a firm cutoff of October 31, so a six-week bear ships by December 12. Candle pre-orders open the same day and close November 15 for pickup at the Milford show.</li>
+  </ul></div>
+  <div class="phase"><div class="d">Days 61 to 90</div><ul>
+    <li>Publish three memory bear stories with permission. Day-14 reviews start landing on product pages.</li>
+    <li>Consignment placed at the vet and one boutique. LLC filed once revenue is real.</li>
+    <li>Holiday bears sewn and shipped. Milford Pottery show Nov 28 to 29 with candle pre-orders packed the night before.</li>
+    <li>Review revenue per fair hour and online orders per month. Cut what did not sell.</li>
+  </ul></div>
+</section>
+
+<section id="splits">
+  <h2>Where the panel split, and the call</h2>
+  <ul>
+    <li><span class="split">Categories.</span> Justin's draft had seven; the UX panelist collapsed to four and made "For Him" and "For Pets" tags. <strong>Call: four.</strong> Fewer than fifty SKUs does not need seven doors.</li>
+    <li><span class="split">Scent count.</span> Maker says five, marketer says six, finance says drop the three slowest to half stock. <strong>Call: five at launch, one rotating seasonal slot.</strong> Her fair sales pick which five.</li>
+    <li><span class="split">Memory bear price.</span> Etsy panelist tiers $95 / $135 / $165 against Etsy comps; marketer says $135 / $165 plus $40 per extra bear; finance says move to $195; maker says $175 to $300. <strong>Call: $135 base, $165 with photo patch, $40 each additional, and raise toward $195 once she has a waiting list.</strong> A plain $95 tier undercuts her own skill.</li>
+    <li><span class="split">Paw balm.</span> Iris will "take the loss." Every panelist disagreed. <strong>Call: $10 at the booth is a 3x product; online only as a two-pack; $6 wholesale to the vet with a minimum.</strong> Do not eat margin to be on a shelf.</li>
+    <li><span class="split">Etsy.</span> Booth veteran says one bear listing as a billboard; Etsy panelist says a hard cap of five. <strong>Call: five, capped, reviewed at four months.</strong> Cut candles and balm from Etsy if they have under five sales by then.</li>
+    <li><span class="split">Subscriptions.</span> Maker wants a 6-week subscription at 10% off; UX says skip in v1 and watch reorder-link clicks. <strong>Call: reminders first, subscriptions only if clicks exceed 20% of sends.</strong></li>
+    <li><span class="split">Face products.</span> Maker parks them; booth veteran says keep online with samples in the fair bag. <strong>Call: park at launch, sample in bags, relaunch as one "Botanical Face Set" if samples generate asks.</strong></li>
+  </ul>
+  <h3>Words in this report, for Iris</h3>
+  <ul class="small">
+    <li><strong>SKU:</strong> one thing you sell at one price. Lavender bar and Vanilla bar are two SKUs.</li>
+    <li><strong>INCI list:</strong> the official ingredient names the label must use ("Butyrospermum Parkii (Shea) Butter"). Your base supplier has this list.</li>
+    <li><strong>Product page:</strong> the page for one item, with photos, price, and the Add to cart button.</li>
+    <li><strong>Wallets:</strong> Apple Pay and Google Pay. The customer taps once instead of typing a card number.</li>
+    <li><strong>Draft order:</strong> an invoice Justin creates in the admin and emails as a pay link. Used for bear deposits.</li>
+    <li><strong>Inventory kit:</strong> a bundle whose parts come out of stock when it sells, so a Sampler subtracts three half bars.</li>
+    <li><strong>Consignment:</strong> the shop pays you only after it sells. <strong>Wholesale:</strong> the shop pays you up front at a lower price.</li>
+  </ul>
+  <p class="small">Sources the panel cited: Etsy 2026 fee schedule; FDA 21 CFR 701 and MoCRA small-business exemption; Ohio Department of Taxation vendor's license and origin-based sourcing; HSCG and ACT insurance rates; Shopify, TryNow, and Pennock 2026 conversion and retention benchmarks; MailerLite June 2026 free-tier change; TammyBears and The Patchwork Bear price lists. Figures marked estimates are the panelists' own.</p>
+</section>
+
+</main>
+</div>
+</div>
