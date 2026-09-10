@@ -49,12 +49,38 @@ export const OHIO_SALES_TAX_RATE = 7.8
 export const OHIO_SALES_TAX_NAME = "Ohio Sales Tax"
 export const OHIO_SALES_TAX_CODE = "OH_SALES_TAX"
 
+// Four categories, ordered by rank so navigation reflects the priority the
+// market research set: keepsakes are uncontested locally and carry the margin,
+// candles are an overdone gift add-on. See docs/BUSINESS.md.
+// "For Him" is a tag and a landing page, never a category.
 export const PRODUCT_CATEGORIES = [
-  { name: "Soap", handle: "soap" },
-  { name: "Bath & Body", handle: "bath-body" },
-  { name: "Candles", handle: "candles" },
-  { name: "Crafts", handle: "crafts" },
-  { name: "Gift Sets", handle: "gift-sets" },
+  {
+    name: "Keepsakes",
+    handle: "keepsakes",
+    description:
+      "Memory bears, memory pillows, and quilts sewn from the clothes of someone you love.",
+    rank: 0,
+  },
+  {
+    name: "Bath & Body",
+    handle: "bath-body",
+    description:
+      "The Wholesome Living line: shampoo bars, beard balms, and tallow balm, made in small batches.",
+    rank: 1,
+  },
+  {
+    name: "Candles",
+    handle: "candles",
+    description:
+      "Pure beeswax candles with a verse on the lid. No fragrance, no soot.",
+    rank: 2,
+  },
+  {
+    name: "Gifts",
+    handle: "gifts",
+    description: "Ready to give, wrapped by hand in Bethel, Ohio.",
+    rank: 3,
+  },
 ]
 
 export const SHIPPING_OPTIONS = [
@@ -478,6 +504,8 @@ export default async function seedUsData(container: MedusaContainer) {
         product_categories: categoriesToCreate.map((category) => ({
           name: category.name,
           handle: category.handle,
+          description: category.description,
+          rank: category.rank,
           is_active: true,
         })),
       },
